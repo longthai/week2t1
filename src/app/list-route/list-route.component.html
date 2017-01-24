@@ -1,0 +1,9 @@
+<p>
+  list-route works!
+</p>
+<div *ngFor="let stop of  routes, let i = index">
+  <h3> Stop {{i}} </h3>
+  <ul *ngFor="let route of stop.patterns">
+    <li> {{route.name}} </li>
+  </ul>
+</div>
